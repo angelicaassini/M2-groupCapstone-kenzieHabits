@@ -1,0 +1,157 @@
+/* FONT IMPORT*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+/* ---------- TO DO ----------------------*/
+/*  ->   VISUAL INVALID INPUT USER LOGIN [ERROR COLOR FIGMA] (REQUIRED)
+    ->   FIX SOME RESOLUTIONS OVER 144Opx IN MEDIA QUERIES [MAIN] (OPTIONAL)
+    ->   INCLUDES THE MODAL OF USER PROFILE, TASK DETAILS AND TASK DELETE [LOGIN AND MAIN] (REQUIRED)
+    ->   STANDARDIZE THE DOCUMENT FOR DEFINED PATTERN OF THE TEAM [MAIN] (REQUIRED)
+    ->   FIX THE TEXT IN THE  LEFT SIDE OF KENZIEHABIT BASED ON FIGMA [LOGIN] [ TEXT = "IF YOU ARE.."] (OPTIONAL)*/
+/*-----------------------------------------*/
+
+
+/*RESET CSS*/
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* COLOR PATTERNS FOR PROJECT*/
+:root{
+    --color-background-container:#4150D2;
+    --color-input-form:  #F1F3F5;
+    --color-input-form-placeholder: #415AF3;
+    --color-button-submit-backgroud: #415AF3;
+    --background-container-color:#FFFF; 
+    --error-1-color:#E64445;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+}
+/* CONTAINER */
+.container{
+    border-radius: 8px;
+    overflow: hidden;
+    width: 80vw;
+    display: flex;
+    margin: 8vh auto;
+    width: fit-content;
+    box-shadow: 0px 4px 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+/* LEFT-SIDE-CONTAINER*/
+.container__left{
+    display: none;
+}
+
+/* LOGIN */
+.login__form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px 121px 50px;
+}
+.login__form h3{
+   font-size: 1.2rem;
+   font-weight: bold;
+    line-height: 22px;
+    margin-bottom: 32px;
+}
+
+/* INPUT FORM*/
+.form__user--input{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 22px;
+}
+.form__user--input p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.form__user--input input{
+    border: 2px solid var(--color-input-form);
+    border-radius: 4px;
+    height: 30px;
+    width: 100%;
+    background-color: var(--color-input-form);
+    outline: none;
+}
+
+input:focus{
+    border: 2px solid var(--color-button-submit-backgroud);
+    padding-left: 10px;
+}
+
+.form__user--input input::placeholder{
+    font-family: 'Inter', sans-serif;
+    line-height: 19.36px;
+   padding:10.5px 0 10.5px 14px;
+   font-size: 12px; 
+}
+
+.login__form button{
+    font-family: 'Inter', sans-serif;
+    border: 2px solid var(--color-button-submit-backgroud);
+    margin-top: 14px;
+    border-radius: 4px;
+    background-color: var(--color-button-submit-backgroud);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 19px;
+    height: 30px;
+    padding: 0 10.5px;
+    color: var(--background-container-color);
+}
+
+/* MEDIA QUERIES FOR  DESKTOP(700px +)*/
+@media screen and (min-width:769px) {
+    
+    /* CONTAINER */
+    .container{
+        margin-top: 10vh;
+        width: 80vw;
+        max-width: 880px;
+    
+    }
+    /* LOGO  AND LEFT TEXT*/
+    .container__left{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 50%;
+        padding: 0 60px;
+        background-color: var(--color-background-container);
+    }
+
+    .container__left h1,  .container__left h2, .container__left p{
+        width: 100%;
+        color: var(--background-container-color);
+    }
+
+    .container__left h1{
+        font-size:28px;
+        margin: 100px 0 57px;
+    }
+    .container__left h2{
+        font-size: 24px;
+        width: 110%;
+        line-height: 32px;
+        margin-bottom: 17px;
+    }
+    .container__left p{
+        font-size: 16px;
+        line-height: 32px;
+    }
+
+    .container__right{
+        width: 50%;
+    }
+    .login__form{
+        width: 100%;
+    }
+
+}

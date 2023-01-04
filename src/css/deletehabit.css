@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body{
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+}
+
+.blur__background-modal-del{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1000;
+}
+
+.modal__container-del{
+    width: 502px;
+    height: 336px;
+    border-radius: 8px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-7);
+   }   
+
+@media screen and (max-width: 769px) {
+    .modal__container-del{
+        width: 100vw;
+    }  
+}
+
+.header__div-del{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__div-del h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 38px 0 0 54px;
+    font-family: 'Inter';
+}
+
+.header__div-span-del{
+    font-size: 24px;
+    color: var(--color-gray-3);
+    margin: 38px 42px 0 0 ;
+    cursor: pointer;
+}
+
+.input__modal-container-del{
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: var(--color-gray-2);
+}
+
+.input__modal-container-del .name1-del {
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 20px;   
+}
+
+.input__modal-container-del .name2-del {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px; 
+}
+
+.input__modal-container-del .buttons-del {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+
+.input__modal-container-del .buttons-del .cancel-del {
+    width: 150px;
+    height: 40px;
+    color: var(--color-gray-2);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-gray-5);
+    cursor: pointer;
+}
+
+.input__modal-container-del .buttons-del .delete-del {
+    width: 180px;
+    height: 40px;
+    color: var(--color-white);
+    border: none;
+    border-radius: 4px;
+    background-color: var(--error-red);
+    cursor: pointer;
+}
+
+.input__modal-container-del .buttons-del .delete-del:active{
+    background-color: var(--error-dark-red);
+}
+
+.disabled{
+    display: none;
+}

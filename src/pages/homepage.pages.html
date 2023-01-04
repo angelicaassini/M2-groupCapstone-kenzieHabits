@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.5/css/unicons.css">
+    <link rel="stylesheet" href="../css/createhabit.css">
+    <link rel="stylesheet" href="../css/updateHabit.modal.css">
+    <link rel="stylesheet" href="../css/editprofile.css">
+    <link rel="stylesheet" href="../css/deletehabit.css">
+    <title>Home Kenzie Habit</title>
+</head>
+
+<body>
+    <div class="modal__edit">
+    </div>
+    <header>
+        <h1>KenzieHabit</h1>
+        <nav class="navbar">
+            <div class="profile__image">
+                <img src="" alt="" class="img__perfil">
+            </div>
+            <div class="navbar__menu">
+                <ul>
+                    <li>
+                        <button class="btn__edit">&#xf007; Editar perfil</button>
+                    </li>
+                    <li>
+                        <button class="logoutButton">&#xf060; Sair da conta</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="main_header">
+            <span class="navbar">
+
+                <div class="pprofile-Main-image">                
+                    <img src="" alt="" class="user_img main__header-img">
+                </div>
+            </span>
+            <p class="user__name">Nome</p>
+        </div>
+    </main>
+
+    <!-- TOAST MESSAGE -->
+    <div class="toast">
+        <div class="toast__message" id="sucess">
+            <span><i class="uil uil-check-circle"></i></span>
+            <div class="message__identifier">
+                <p class="message__title">Sucess!</p>
+                <p class="message" id="message__sucess">Seu hábito foi alterado</p>
+            </div>
+        </div>
+        <div class="toast__message" id="error">
+            <span><i class="uil uil-exclamation-circle"></i></span>
+            <div class="message__identifier">
+                <p class="message__title">Ops!</p>
+                <p class="message" id="message__wrong">Wrong</p>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="../scripts/homepage.scripts.js"></script>
+</body>
+
+</html>

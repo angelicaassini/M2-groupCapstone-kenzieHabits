@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+
+
+/*Icones do select*/
+select{
+    font-family: 'fontAwesome', 'Inter';
+}
+
+.blur__modal--edit{
+
+    width: 98.7vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    z-index: 1000;
+}
+
+.modal__container--edit{
+    width: 305px;
+    height: 349px;
+    border-radius: 8px;
+    padding: 0 14px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-gray-7);
+}
+
+.header__div--edit{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__div--edit h1 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+
+}
+
+.header__div-span{
+    font-size: 24px;
+    color: var(--color-gray-3);
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.header__div-span:active{
+    color: var(--color-gray-1);
+    transform: scale(0.8);
+}
+
+.input__modal-container--edit{
+    height: 100%;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    color: var(--color-gray-2);
+}
+
+.input__modal-container--edit input{
+    width: 95%;
+    height: 40px;
+    background-color: var(--color-gray-5);
+    border: none;
+    border-radius: 4px;
+}
+
+.input__name--edit{
+    pointer-events: none;
+}
+
+.input__modal-container--edit input::placeholder{
+    padding-left: 18px;
+    font-size: 16px;
+    color: var(--color-gray-2);
+}
+
+
+.button__edit{
+    width: 95%;
+    height: 40px;
+    color: var(--color-gray-6);
+    border: none;
+    border-radius: 4px;
+
+    background-color: var(--color-brand-light-blue);
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.active__Button{
+    background-color: #415AF3;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+.input__modal-container--edit button:active{
+    background-color: var(--color-brand-dark-blue);
+}
+
+.disabled{
+    display: none;
+}
+
+@media (min-width:769px) {
+    .modal__container--edit{
+        width: 502px;
+        height: 349px;
+    }
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* COLOR PATTERNS FOR PROJECT*/
+:root {
+
+    --color-brand-blue: rgba(65, 90, 243,1);
+    --color-brand-dark-blue: rgba(65, 80, 210,1);
+    --color-brand-light-blue: rgba(213, 227, 251,1);
+
+    --color-gray-1:rgba(33, 37, 41,1);
+    --color-gray-2:rgba(52, 58, 64,1);
+    --color-gray-3:rgba(173, 181, 189,1);
+    --color-gray-4:rgba(233, 236, 239,1);
+    --color-gray-5:rgba(233, 236, 239,1);
+    --color-gray-6:rgba(241, 243, 245,1);
+    --color-gray-7:rgba(248, 249, 250,1);
+
+    --sucess: rgba(86, 207, 142,1);
+    --error-red: rgba(230, 68, 69,1);
+    --error-dark-red: rgba(240, 56, 57,1); 
+  
+    --color-white:rgba(255, 255, 255,1);
+}
+
+
